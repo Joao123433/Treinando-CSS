@@ -16,9 +16,9 @@ header {
   height: 370px;
   opacity: 0;
   animation-name: fade;
-  animation-duration: 2s;
+  animation-duration: 800ms;
   animation-delay: 500ms;
-  animation-timing-function: ease-out();
+  animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
 
@@ -65,7 +65,7 @@ main {
   gap: 49.662px;
 }
 
-section {
+main section {
   width: 299px;
   height: 285px;
   background-color: white;
@@ -103,8 +103,9 @@ section p {
 .formulario {
   padding: 0px 40px;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 43px;
 }
 
@@ -123,7 +124,7 @@ form {
 
 form div {
   width: 318px;
-  padding: 12px 16px;
+  padding: 10px 13px;
   border: 1px solid black;
   border-radius: 16px;
   display: flex;
@@ -136,6 +137,7 @@ div input {
   border: none;
   color: #312D64;
   font-weight: 600;
+  padding: 5px;
 }
 
 div textarea {
@@ -166,6 +168,11 @@ footer h1 {
   text-align: center;
   color: white;
   font-weight: 100;
+}
+
+footer h1 a {
+  text-decoration: none;
+  color: white;
 }
 
 @keyframes fade {
@@ -215,10 +222,12 @@ footer h1 {
   .formulario {
     padding: 0px;
     justify-content: space-between;
+    flex-direction: row;
   }
   
   .bg {
     background-image: url(https://s3-alpha-sig.figma.com/img/01bf/82dc/f45e68a27da8460fb4770654d98bf3d4?Expires=1701043200&Signature=gqPorS17RY3K4sjSP5eT1PCzUgBSLKngNhluKQhzVlioZKget5pM6-bgngdyPxErKDME157Xp8JUInUFzUs4t9KkwJVqGyijznJLqnvNntv76necpekcY1tbwPL6lF8yRxvEQnAAGrFEUp4WdOhjKxRTkXXlRl2hP8DHvJ2jaMzjMpzCbAdzC6vsVuavnVv~ip1~kcLfBCRlYpmgkG~3DdDPjCYmoe2-AF5-TMMrExJoFoSct4ewAzXNI7n3wHhHaLYoCmFHusnaspRt5Vn6H6lqG2VuxYx0o9v-61BJ0RdDiLc7qGXtck0r-z3MDXHO4frR2l6umK-fqm8x3PlhJg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+    background-size: cover;
     width: 644px;
     height: 500px;
   }
